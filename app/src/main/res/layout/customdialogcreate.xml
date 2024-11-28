@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#D9D9D9">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Añadir un nuevo país"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre: "
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/txtAdminCrearPais"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de país"
+            android:textColor="@color/black"
+            android:imeOptions="actionDone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capital: "
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/txtAdminCrearCapital"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="Capital de país"
+            android:textColor="@color/black"
+            android:imeOptions="actionDone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bandera: "
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/txtAdminCrearBandera"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:hint="url de mapa"
+            android:textColor="@color/black"
+            android:imeOptions="actionDone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mapa del País: "
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/txtAdminCrearMapa"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:hint="url de mapa"
+            android:textColor="@color/black"
+            android:imeOptions="actionDone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mapa del Pais: "
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/txtAdminCrearLocal"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:hint="url de mapa de localizacion"
+            android:textColor="@color/black"
+            android:imeOptions="actionDone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAdminCrearCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/botonrojo"
+            android:textColor="@color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAdminCrearCrear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crear"
+            android:background="@drawable/botonverde"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+</LinearLayout>

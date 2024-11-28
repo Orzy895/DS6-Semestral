@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D9D9D9">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar Datos"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:textSize="25dp"/>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre: "
+            android:textColor="@color/black"/>
+        
+        <EditText
+            android:id="@+id/txtAdminPais"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Panamá"
+            android:textColor="@color/black"
+            android:imeOptions="actionDone"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capital: "
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/txtAdminCapital"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Panamá"
+            android:textColor="@color/black"
+            android:imeOptions="actionDone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bandera: "
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/txtAdminBandera"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Panamá"
+            android:textColor="@color/black"
+            android:imeOptions="actionDone"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgAdminBandera"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bandear"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mapa del País: "
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/txtAdminMapa"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Panamá"
+            android:textColor="@color/black"
+            android:imeOptions="actionDone"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgAdminMapa"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bandear"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mapa del Pais: "
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/txtAdminLocal"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Panamá"
+            android:textColor="@color/black"
+            android:imeOptions="actionDone"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgAdminLocal"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bandear"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAdminCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/botonrojo"
+            android:textColor="@color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAdminCambiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cambiar"
+            android:background="@drawable/botonverde"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

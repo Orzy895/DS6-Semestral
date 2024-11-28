@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:background="#D9D9D9"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/EliminarConfirmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seguro que quiere eliminar "
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="25dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEliminarCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:background="@drawable/botonrojo"
+        android:textColor="@color/white"
+        android:layout_marginBottom="25dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEliminarConfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar"
+        android:background="@drawable/botonverde"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>

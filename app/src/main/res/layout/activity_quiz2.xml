@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz2">
+
+    <ImageView
+        android:id="@+id/mapaFondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:scaleType="centerCrop"
+        android:src="@drawable/loginbg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/rectangulo"
+            android:padding="10dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:src="@drawable/question"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adivina la Bandera"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                android:layout_weight="1"
+                android:textAlignment="center"/>
+            <TextView
+                android:onClick="backHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp">
+            <TextView
+                android:id="@+id/quizRonda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quiz: 4/10"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/quiz2Img"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:src="@drawable/imgprueba"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:id="@+id/txtQuiz2Res"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del País"
+            android:layout_gravity="center"
+            android:layout_marginVertical="50dp"
+            android:textColor="@color/white"
+            android:imeOptions="actionDone"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:onClick="siguiente"
+            android:layout_marginTop="20dp"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rectangulo_naranja_boton"
+            android:text="SIGUIENTE"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</FrameLayout>
